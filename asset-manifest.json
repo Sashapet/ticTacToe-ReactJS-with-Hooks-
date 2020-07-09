@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ticTacToe-ReactJS-with-Hooks/static/css/main.b125e38d.chunk.css",
-    "main.js": "/ticTacToe-ReactJS-with-Hooks/static/js/main.f7703ae2.chunk.js",
-    "main.js.map": "/ticTacToe-ReactJS-with-Hooks/static/js/main.f7703ae2.chunk.js.map",
-    "runtime-main.js": "/ticTacToe-ReactJS-with-Hooks/static/js/runtime-main.231ab84d.js",
-    "runtime-main.js.map": "/ticTacToe-ReactJS-with-Hooks/static/js/runtime-main.231ab84d.js.map",
-    "static/js/2.cb39cddd.chunk.js": "/ticTacToe-ReactJS-with-Hooks/static/js/2.cb39cddd.chunk.js",
-    "static/js/2.cb39cddd.chunk.js.map": "/ticTacToe-ReactJS-with-Hooks/static/js/2.cb39cddd.chunk.js.map",
-    "index.html": "/ticTacToe-ReactJS-with-Hooks/index.html",
-    "precache-manifest.a8e5d0394789ce8dfde46b8f954d54d3.js": "/ticTacToe-ReactJS-with-Hooks/precache-manifest.a8e5d0394789ce8dfde46b8f954d54d3.js",
-    "service-worker.js": "/ticTacToe-ReactJS-with-Hooks/service-worker.js",
-    "static/css/main.b125e38d.chunk.css.map": "/ticTacToe-ReactJS-with-Hooks/static/css/main.b125e38d.chunk.css.map",
-    "static/js/2.cb39cddd.chunk.js.LICENSE.txt": "/ticTacToe-ReactJS-with-Hooks/static/js/2.cb39cddd.chunk.js.LICENSE.txt"
+    "main.css": "/ticTacToe-ReactJS-with-Hooks-/static/css/main.b125e38d.chunk.css",
+    "main.js": "/ticTacToe-ReactJS-with-Hooks-/static/js/main.f7703ae2.chunk.js",
+    "main.js.map": "/ticTacToe-ReactJS-with-Hooks-/static/js/main.f7703ae2.chunk.js.map",
+    "runtime-main.js": "/ticTacToe-ReactJS-with-Hooks-/static/js/runtime-main.e5b9a58a.js",
+    "runtime-main.js.map": "/ticTacToe-ReactJS-with-Hooks-/static/js/runtime-main.e5b9a58a.js.map",
+    "static/js/2.cb39cddd.chunk.js": "/ticTacToe-ReactJS-with-Hooks-/static/js/2.cb39cddd.chunk.js",
+    "static/js/2.cb39cddd.chunk.js.map": "/ticTacToe-ReactJS-with-Hooks-/static/js/2.cb39cddd.chunk.js.map",
+    "index.html": "/ticTacToe-ReactJS-with-Hooks-/index.html",
+    "precache-manifest.2a5f6e27929f9e40e6c1bfc923e8a248.js": "/ticTacToe-ReactJS-with-Hooks-/precache-manifest.2a5f6e27929f9e40e6c1bfc923e8a248.js",
+    "service-worker.js": "/ticTacToe-ReactJS-with-Hooks-/service-worker.js",
+    "static/css/main.b125e38d.chunk.css.map": "/ticTacToe-ReactJS-with-Hooks-/static/css/main.b125e38d.chunk.css.map",
+    "static/js/2.cb39cddd.chunk.js.LICENSE.txt": "/ticTacToe-ReactJS-with-Hooks-/static/js/2.cb39cddd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.231ab84d.js",
+    "static/js/runtime-main.e5b9a58a.js",
     "static/js/2.cb39cddd.chunk.js",
     "static/css/main.b125e38d.chunk.css",
     "static/js/main.f7703ae2.chunk.js"
