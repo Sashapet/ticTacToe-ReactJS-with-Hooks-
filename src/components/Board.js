@@ -1,6 +1,7 @@
 import React from 'react'
 import Square from './Square.js'
 import {useState} from 'react'
+import calcWinner from '../helpers/calcWinner' // Calculating Winner
 
 function Board(){
     //boardState
@@ -21,6 +22,7 @@ function Board(){
         // acquire who's next
         setXIsNext(!xIsNext);
     }
+    //HANDLE CLICK
     //HANDLEAGAIN
     let squares_v2 = Array(9).fill(null);
     const handleAgain = () => {
@@ -30,12 +32,11 @@ function Board(){
         setBoardSquares(squares_v2);
         setXIsNext(true);
     }
-    // creating square, and passing data through props
-    const showSquare = (index) => {
-        return <Square onClick={() => handleClick(index)} color="no" value={boardSquares[index]}/>
-    }
-    // assigning winnerSign to winner variable
-    const winner = calcWinner(boardSquares);
+    //HANDLEAGAIN
+    //ASSIGNING winnerLines and winner
+    let winnerData = calcWinner(boardSquares);
+    let winnerLines = winnerData ? winnerData[1] : ''
+    let winner = winnerData ? winnerData[0] : ''
     let status;
     status = winner ? `Winner is: ${winner}!` : `Player ${xIsNext ? "X":"O"} turn`;
     //checking if there is no null values in boardSquares array
@@ -45,45 +46,30 @@ function Board(){
             drawDetector = false;
         }
     }
+    const showSquare = (index) => {
+        return <Square onClick={() => handleClick(index)} highlight={winnerLines && winnerLines.includes(index)} value={boardSquares[index]} />
+    }
     return (
         <div className="board">
             <h1>{drawDetector && !winner ? "It's Draw!!" : status}</h1>
             <div className="eile">
-                <div>{showSquare(0)}</div>
-                <div>{showSquare(1)}</div>
-                <div>{showSquare(2)}</div>
+                {showSquare(0)}
+                {showSquare(1)}
+                {showSquare(2)}
             </div>
             <div className="eile">
-                <div>{showSquare(3)}</div>
-                <div>{showSquare(4)}</div>
-                <div>{showSquare(5)}</div>
+                {showSquare(3)}
+                {showSquare(4)}
+                {showSquare(5)}
             </div>
             <div className="eile">
-                <div>{showSquare(6)}</div>
-                <div>{showSquare(7)}</div>
-                <div>{showSquare(8)}</div>
+                {showSquare(6)}
+                {showSquare(7)}
+                {showSquare(8)}
             </div>
             <button onClick = {() => handleAgain()}>Again</button>
         </div>
     )
 }
-//WINNING COMBINATIONS
-function calcWinner(squares){
-    const winningLines = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6]
-    ]
-    for (let i = 0; i < winningLines.length; i++) {
-        const [a, b, c] = winningLines[i]
-        if (squares[a] && squares[a] === squares[b] && squares[b] === squares[c]) {
-            return squares[a];
-        }
-    }
-}
+
 export default Board
